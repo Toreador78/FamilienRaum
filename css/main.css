@@ -20,11 +20,21 @@ html {
     color: white;
 }
 
+.navbar-burger {
+    color: white;
+}
+
+.navbar-brand {
+    background-color: #B1C2A4;
+}
+
 .navbar-item{
+    background-color: #B1C2A4;
     color: white;
     padding-right: 30px;
 }
 
+.navbar-item-dropdown,
 .navbar-dropdown {
     background-color: #A0B5BD;
 }
@@ -41,6 +51,12 @@ a.navbar-item:hover {
     color: white
 }
 
+.notification .content,
+.notification .subtitle,
+.notification .title {
+    color: #363636;
+}
+
 .fa {
     padding-right: 10px;
 }
@@ -48,14 +64,38 @@ a.navbar-item:hover {
 .content {
     padding:30px;
     background-color: #eeeeee;
+    border-radius: 25px;
+}
+
+.image {
+    margin:25px;
+    border-radius: 25px;
 }
 
 .footer {
     background-color: #A0B5BD;
     color: white;
+    padding: 1.5rem 1.5rem 1.5rem;
 }
 
 .footerlink {
     background-color: #A0B5BD;
     color: white;
 }
+
+.is-blue {
+    background-color: #A0B5BD;
+}
+
+.is-green {
+    background-color: #B1C2A4;
+}
+
+.is-rosa {
+    background-color: #E4B9CC;
+}
+
+.is-grey {
+    background-color: #959A99;
+}
+
