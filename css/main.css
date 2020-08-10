@@ -103,3 +103,9 @@ a.navbar-item:hover {
     margin-left: 10em;
     margin-right: 10em;
 }
+
+.menucontent {
+    padding: 15px;
+    background-color: #eeeeee;
+    border-radius: 25px;
+}

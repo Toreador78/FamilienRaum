@@ -10,52 +10,26 @@ $(document).ready(function() {
         $(".navbar-menu").toggleClass("is-active");
 
     });
-/*
-    $("#loremlink").click(function () {
-        $("#loremcontent").removeClass("is-hidden");
-        $("#duiscontent").addClass("is-hidden");
-        $("#wisicontent").addClass("is-hidden");
-        $("#namcontent").addClass("is-hidden");
-    });
 
-    $("#duislink").click(function () {
-        $("#loremcontent").addClass("is-hidden");
-        $("#duiscontent").removeClass("is-hidden");
-        $("#wisicontent").addClass("is-hidden");
-        $("#namcontent").addClass("is-hidden");
-    });
-
-    $("#wisilink").click(function () {
-        $("#loremcontent").addClass("is-hidden");
-        $("#duiscontent").addClass("is-hidden");
-        $("#wisicontent").removeClass("is-hidden");
-        $("#namcontent").addClass("is-hidden");
-    });
-
-    $("#namlink").click(function () {
-        $("#loremcontent").addClass("is-hidden");
-        $("#duiscontent").addClass("is-hidden");
-        $("#wisicontent").addClass("is-hidden");
-        $("#namcontent").removeClass("is-hidden");
-    });
-*/
+    //Main Menu
     $("#schwangereLink").click(function () {
         $(".course").addClass("is-hidden");
-        $("#crashkursBaby").removeClass("is-hidden");
-        $("#ersteHilfe").removeClass("is-hidden");
+        $("#fuerSchwangere").removeClass("is-hidden");
+    });
+
+    $("#stillenLink").click(function () {
+        $(".course").addClass("is-hidden");
+        $("#stillen").removeClass("is-hidden");
+    });
+
+    $("#elternLink").click(function () {
+        $(".course").addClass("is-hidden");
+        $("#fuerEltern").removeClass("is-hidden");
     });
 
     $("#massageLink").click(function () {
         $(".course").addClass("is-hidden");
-        $("#massageBaby").removeClass("is-hidden");
-        $("#massageZuhause").removeClass("is-hidden");
-        $("#massagePapas").removeClass("is-hidden");
-    });
-
-    $("#stillberatungLink").click(function () {
-        $(".course").addClass("is-hidden");
-        $("#stillberatung").removeClass("is-hidden");
-        $("#stillvorbereitungskurs").removeClass("is-hidden");
+        $("#massage").removeClass("is-hidden");
     });
 
     $("#babyschwimmenLink").click(function () {
@@ -63,23 +37,102 @@ $(document).ready(function() {
         $("#babyschwimmen").removeClass("is-hidden");
     });
 
-    $("#elternLink").click(function () {
-        $(".course").addClass("is-hidden");
-        $("#beikost").removeClass("is-hidden");
-        $("#babysignal").removeClass("is-hidden");
-        $("#familySteps").removeClass("is-hidden");
-    });
-
     $("#laufMamaLink").click(function () {
         $(".course").addClass("is-hidden");
-        $("#laufmamaAquafit").removeClass("is-hidden");
-        $("#laufmamaKinderwagen").removeClass("is-hidden");
-        $("#laufmamaMehr").removeClass("is-hidden");
-        $("#laufmamaSchoenSchwanger").removeClass("is-hidden");
+        $("#laufmama").removeClass("is-hidden");
     });
 
     $("#trageberatungLink").click(function () {
         $(".course").addClass("is-hidden");
         $("#trageberatung").removeClass("is-hidden");
+    });
+
+    //Für Schwangere Sub Menu
+    $("#ersteHilfeLink").click(function () {
+        $("#ersteHilfe").removeClass("is-hidden");
+        $("#crashkursBaby").addClass("is-hidden");
+    });
+
+    $("#crashkursBabyLink").click(function () {
+        $("#ersteHilfe").addClass("is-hidden");
+        $("#crashkursBaby").removeClass("is-hidden");
+    });
+
+    //Stillen
+    $("#stillberatungLink").click(function () {
+        $("#stillberatung").removeClass("is-hidden");
+        $("#stillvorbereitungskurs").addClass("is-hidden");
+    });
+
+    $("#stillvorbereitungLink").click(function () {
+        $("#stillberatung").addClass("is-hidden");
+        $("#stillvorbereitungskurs").removeClass("is-hidden");
+    });
+
+    //Für Eltern Sub Menu
+    $("#beikostLink").click(function () {
+        $("#beikost").removeClass("is-hidden");
+        $("#babysignal").addClass("is-hidden");
+        $("#familySteps").addClass("is-hidden");
+    });
+
+    $("#babysignalLink").click(function () {
+        $("#beikost").addClass("is-hidden");
+        $("#babysignal").removeClass("is-hidden");
+        $("#familySteps").addClass("is-hidden");
+    });
+
+    $("#familyStepsLink").click(function () {
+        $("#beikost").addClass("is-hidden");
+        $("#babysignal").addClass("is-hidden");
+        $("#familySteps").removeClass("is-hidden");
+    });
+
+    //Massage Sub Menu
+    $("#massageBabyLink").click(function () {
+        $("#massageBaby").removeClass("is-hidden");
+        $("#massageZuhause").addClass("is-hidden");
+        $("#massagePapas").addClass("is-hidden");
+    });
+
+    $("#massageZuhauseLink").click(function () {
+        $("#massageBaby").addClass("is-hidden");
+        $("#massageZuhause").removeClass("is-hidden");
+        $("#massagePapas").addClass("is-hidden");
+    });
+
+    $("#massagePapaLink").click(function () {
+        $("#massageBaby").addClass("is-hidden");
+        $("#massageZuhause").addClass("is-hidden");
+        $("#massagePapas").removeClass("is-hidden");
+    });
+
+    //LaufMamaLauf Sub Menu
+    $("#laufmamaAquafitLink").click(function () {
+        $("#laufmamaAquafit").removeClass("is-hidden");
+        $("#laufmamaKinderwagen").addClass("is-hidden");
+        $("#laufmamaMehr").addClass("is-hidden");
+        $("#laufmamaSchoenSchwanger").addClass("is-hidden");
+    });
+
+    $("#laufmamaKinderwagenLink").click(function () {
+        $("#laufmamaAquafit").addClass("is-hidden");
+        $("#laufmamaKinderwagen").removeClass("is-hidden");
+        $("#laufmamaMehr").addClass("is-hidden");
+        $("#laufmamaSchoenSchwanger").addClass("is-hidden");
+    });
+
+    $("#laufmamaMehrLink").click(function () {
+        $("#laufmamaAquafit").addClass("is-hidden");
+        $("#laufmamaKinderwagen").addClass("is-hidden");
+        $("#laufmamaMehr").removeClass("is-hidden");
+        $("#laufmamaSchoenSchwanger").addClass("is-hidden");
+    });
+
+    $("#laufmamaSchoenSchwangerLink").click(function () {
+        $("#laufmamaAquafit").addClass("is-hidden");
+        $("#laufmamaKinderwagen").addClass("is-hidden");
+        $("#laufmamaMehr").addClass("is-hidden");
+        $("#laufmamaSchoenSchwanger").removeClass("is-hidden");
     });
 });
