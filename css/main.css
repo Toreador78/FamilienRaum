@@ -99,3 +99,7 @@ a.navbar-item:hover {
     background-color: #959A99;
 }
 
+.content ul {
+    margin-left: 10em;
+    margin-right: 10em;
+}
