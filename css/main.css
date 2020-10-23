@@ -7,11 +7,23 @@ html {
 }
 
 .hero-head {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
     background-color: #B1C2A4;
     color: white;
 }
 
+.hero {
+    /*position: fixed;
+    width: 100%;
+    /*z-index: 999;*/
+}
+
 .hero-body {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
     background-color: #ffffff;
 }
 
@@ -20,8 +32,18 @@ html {
     color: white;
 }
 
+.navbar-menu {
+    background-color: #B1C2A4;
+}
+
 .navbar-burger {
     color: white;
+}
+
+.centeredInBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-brand {
@@ -99,13 +121,16 @@ a.navbar-item:hover {
     background-color: #959A99;
 }
 
-.content ul {
-    margin-left: 10em;
-    margin-right: 10em;
-}
-
 .menucontent {
     padding: 15px;
     background-color: #eeeeee;
     border-radius: 25px;
+}
+
+img {
+    border-radius: 25px;
+}
+
+.cardcontent {
+    margin: 20px;
 }

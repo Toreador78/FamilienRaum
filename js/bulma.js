@@ -11,7 +11,61 @@ $(document).ready(function() {
 
     });
 
-    //Main Menu
+    //Home
+    $("#homeLink").click(function () {
+        $(".misc").addClass("is-hidden");
+        $(".course").addClass("is-hidden");
+        $(".about").addClass("is-hidden");
+        $("#home").removeClass("is-hidden");
+    });
+
+    //Über Uns
+    $("#kweissLink").click(function () {
+        $(".misc").addClass("is-hidden");
+        $(".course").addClass("is-hidden");
+        $(".about").addClass("is-hidden");
+        $("#kweiss").removeClass("is-hidden");
+    });
+
+    $("#mleuchsLink").click(function () {
+        $(".misc").addClass("is-hidden");
+        $(".course").addClass("is-hidden");
+        $(".about").addClass("is-hidden");
+        $("#mleuchs").removeClass("is-hidden");
+    });
+
+    $("#lwaltherLink").click(function () {
+        $(".misc").addClass("is-hidden");
+        $(".course").addClass("is-hidden");
+        $(".about").addClass("is-hidden");
+        $("#lwalther").removeClass("is-hidden");
+    });
+
+    //Mieten
+    $("#raumMieteLink").click(function(){
+        $(".misc").addClass("is-hidden");
+        $(".course").addClass("is-hidden");
+        $(".about").addClass("is-hidden");
+        $("#raumMiete").removeClass("is-hidden");
+    });
+
+    $("#fachMieteLink").click(function(){
+        $(".misc").addClass("is-hidden");
+        $(".course").addClass("is-hidden");
+        $(".about").addClass("is-hidden");
+        $("#raumMiete").removeClass("is-hidden");
+    });
+
+    //Kontakt
+    $('#contactLink').click(function () {
+        $(".misc").addClass("is-hidden");
+        $(".course").addClass("is-hidden");
+        $(".about").addClass("is-hidden");
+        $("#contact").removeClass("is-hidden");
+    })
+
+/*
+    //Course Menu
     $("#schwangereLink").click(function () {
         $(".course").addClass("is-hidden");
         $("#fuerSchwangere").removeClass("is-hidden");
@@ -45,6 +99,11 @@ $(document).ready(function() {
     $("#trageberatungLink").click(function () {
         $(".course").addClass("is-hidden");
         $("#trageberatung").removeClass("is-hidden");
+    });
+
+    $("#trageberatungLink2").click(function () {
+        $(".course").addClass("is-hidden");
+        $("#trageberatung2").removeClass("is-hidden");
     });
 
     //Für Schwangere Sub Menu
@@ -135,4 +194,6 @@ $(document).ready(function() {
         $("#laufmamaMehr").addClass("is-hidden");
         $("#laufmamaSchoenSchwanger").removeClass("is-hidden");
     });
+
+ */
 });
