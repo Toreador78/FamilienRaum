@@ -12,12 +12,13 @@ $(document).ready(function() {
     });
 
     //Home
+    /*
     $("#homeLink").click(function () {
         $(".misc").addClass("is-hidden");
         $(".course").addClass("is-hidden");
         $(".about").addClass("is-hidden");
         $("#home").removeClass("is-hidden");
-    });
+    });*/
 
     //Über Uns
     $("#kweissLink").click(function () {
@@ -42,12 +43,13 @@ $(document).ready(function() {
     });
 
     //Mieten
+    /*
     $("#raumMieteLink").click(function(){
         $(".misc").addClass("is-hidden");
         $(".course").addClass("is-hidden");
         $(".about").addClass("is-hidden");
         $("#raumMiete").removeClass("is-hidden");
-    });
+    });*/
 
     $("#fachMieteLink").click(function(){
         $(".misc").addClass("is-hidden");
