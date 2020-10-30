@@ -1,66 +1,57 @@
+:root {
+    --main-blue:  #A0B5BD;
+    --main-green: #B1C2A4;
+    --main-rosa:  #E4B9CC;
+    --main-grey:  #959A99;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0 none;
+}
+
 html {
     background-color: #959A99;
 }
-
-.container {
-    text-align: center;
+img {
+    border-radius: 25px;
 }
 
+.hero {
+    background-color: var(--main-green);
+}
 .hero-head {
     position: fixed;
     width: 100%;
     z-index: 999;
-
-    background-color: #B1C2A4;
     color: white;
+    background-color: var(--main-green);
 }
-
-.hero {
-    /*position: fixed;
-    width: 100%;
-    /*z-index: 999;*/
-}
-
 .hero-body {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
-    background-color: #ffffff;
+    background-color: white;
 }
-
 .hero-foot {
-    background-color: #B1C2A4;
     color: white;
 }
 
-.navbar-menu {
-    background-color: #B1C2A4;
-}
-
-.navbar-burger {
+.navbar,
+.navbar-brand,
+.navbar-menu{
+    background-color: var(--main-green);
     color: white;
 }
-
-.centeredInBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar-brand {
-    background-color: #B1C2A4;
-}
-
+.navbar-burger,
 .navbar-item{
-    background-color: #B1C2A4;
     color: white;
     padding-right: 30px;
 }
-
 .navbar-item-dropdown,
 .navbar-dropdown {
-    background-color: #A0B5BD;
+    background-color: var(--main-blue);
 }
-
 .navbar-link.is-active,
 .navbar-link:focus,
 .navbar-link:focus-within,
@@ -69,68 +60,61 @@ a.navbar-item.is-active,
 a.navbar-item:focus,
 a.navbar-item:focus-within,
 a.navbar-item:hover {
-    background-color: #959A99;
+    background-color: var(--main-grey);
     color: white
 }
 
-.notification .content,
-.notification .subtitle,
-.notification .title {
-    color: #363636;
+.footer,.footerlink {
+    background-color: var(--main-blue);
+    color: white;
+}
+.footer {
+    padding: 1.5rem 1.5rem 1.5rem;
 }
 
+.centeredInBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    margin:25px;
+} /*Logo Bild im Header*/
 .fa {
     padding-right: 10px;
 }
 
+.container {
+    text-align: center;
+}
 .content {
     padding:30px;
     background-color: #eeeeee;
     border-radius: 25px;
 }
-
-.image {
-    margin:25px;
-    border-radius: 25px;
-}
-
-.footer {
-    background-color: #A0B5BD;
-    color: white;
-    padding: 1.5rem 1.5rem 1.5rem;
-}
-
-.footerlink {
-    background-color: #A0B5BD;
-    color: white;
-}
-
-.is-blue {
-    background-color: #A0B5BD;
-}
-
-.is-green {
-    background-color: #B1C2A4;
-}
-
-.is-rosa {
-    background-color: #E4B9CC;
-}
-
-.is-grey {
-    background-color: #959A99;
-}
-
 .menucontent {
     padding: 15px;
     background-color: #eeeeee;
     border-radius: 25px;
 }
-
-img {
-    border-radius: 25px;
-}
-
 .cardcontent {
     margin: 20px;
+}
+
+.social-media a {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    margin: 6px;
+    padding: 0;
+}
+.social-media a i {
+    line-height: 32px;
+    font-size: 14px;
+    margin: auto;
+    padding-right: 0;
 }
